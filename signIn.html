@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(245, 245, 245);">
+    <center><h1 class="regist">Sign In Form</h1></center>
+    <div class="container d-flex align-items-center justify-content-center" style="min-height: 100vh;" id="containerSign">
+        
+        <div class="row">
+            <div class="col-12">
+                <div class="card " style="width: 25rem;">
+                    <img src="Media/logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="cardsign">Sign In</h5>
+                        <form action="Registration.html" id="fromSignIn">
+                            <!-- <label for="user">UserName</label> -->
+                             <input  class="sign" type="email" id="username" name="userName" placeholder="Email @" required><br>
+                            <p id="messageUser" style="color: red;"></p>
+                             <!-- <label for="Password">Password</label>  -->
+                             <input class="signin" type="password" id="password" name="password" placeholder="Password" required><br>
+                            <p id="messagePassword" style="color: red;"></p>
+                            <button class="log">Sign In</button>
+                        </form>
+                    </center>
+                    </div>
+                  </div> 
+             </div> 
+        </div>
+    </div> 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="signIn.js"></script>
+</body>
+</html>

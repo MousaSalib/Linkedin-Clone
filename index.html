@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body class="position-relative">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light z-3 fixed-top">
+        <div class="container">
+            <!-- LinkedIn logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://www.linkedin.com/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+                LinkedIn
+            </a>
+    
+            <!-- Navbar toggler button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-house">  <span>Home</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user-group"></i>   <span>My Network</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i> <span>Jobs</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-comment-dots"></i> <span>Messaging</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-bell"> <span>Notifications</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> <span>Me</span></a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput" >
+                    
+                    <img src="Media/300825098_3237118913169130_3519148869853743918_n.jpg" width="35px" height="35px" class="rounded-circle ms-2" id="navimg">
+                </form>
+            </div>
+        </div>
+        <!-- ----------------------------------dropdownmenue-------------------------- -->
+        <!-- <div class="resultSearch">
+
+        </div> -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="Media/300825098_3237118913169130_3519148869853743918_n.jpg" alt="">
+                    <div>
+                        <h3>Mousa</h3>
+                        <a href="profile.html">see you Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <i class="fa-solid fa-message"></i>
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <i class="fa-solid fa-question"></i>
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <i class="fa-solid fa-moon"></i>
+                    <p>Dispay & Accessability</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link" id="logOut">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>LogOut</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>  
+<!-- -------------------------navbar finished-------------------------------- -->
+<div class="container1" id="count1">
+    <div id="searcData">
+
+    </div>
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="Media/300825098_3237118913169130_3519148869853743918_n.jpg" width="100%" height="300px">
+            <div class="sidebar-profile-info">
+                <img src="Media/300825098_3237118913169130_3519148869853743918_n.jpg">
+                <h1>Mousa Salib</h1>
+                <h3>Web Developer at microsoft</h3>
+                <ul>
+                    <li>Your profile views<span>52</span></li>
+                    <li>Your post views<span>810</span></li>
+                    <li>Your connections<span>205</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="" alt="Not Found">My Items</a>
+                <a href="#"><img src="" alt="Not Found">Try Premium</a>
+            </div>
+        </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+            <h3>RECENT</h3>
+            <a href="#"><i class="fa-sharp fa-solid fa-rotate"></i>Web Development</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-rotate"></i>User Interface</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-rotate"></i>Online Learning</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-rotate"></i>Learn Online</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-rotate"></i>Code Better</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-rotate"></i>Group Learning</a>
+            <h3>GROUPS</h3>
+            <a href="#"><i class="fa-solid fa-user-group"></i>FrontEnd</a>
+            <a href="#"><i class="fa-solid fa-user-group"></i>Data Base</a>
+            <a href="#"><i class="fa-solid fa-user-group"></i>Html & Css</a>
+            <a href="#"><i class="fa-solid fa-user-group"></i>Js $ React</a>
+            
+            <h3>HASHTAG</h3>
+            <a href="#"><i class="fa-sharp fa-solid fa-hashtag"></i>Web Development</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-hashtag"></i>User Interface</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-hashtag"></i>Code Learning</a>
+            <div class="discover-more-link">
+                <a href="#">Discover More</a>
+            </div>
+        </div>
+        <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+    </div>
+    <!-- ----------------------------------------left bar finished-------------------------------------- -->
+    <div class="main-content">
+        <div class="create-post mt-5">
+            <div class="create-post-input">
+                <img src="Media/300825098_3237118913169130_3519148869853743918_n.jpg">
+                <textarea rows="2" placeholder="Write a post"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><i class="fa-solid fa-camera"></i>Photo</li>
+                <li><i class="fa-solid fa-video"></i>Video</li>
+                <li><i class="fa-regular fa-calendar-days"></i>Event</li>
+                <li>Post</li>
+            </div>
+        </div>
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="Media/triangle.png"></span></p>
+        </div>
+
+        <div class="post">
+            <div class="post-author">
+                <img src="Media/user-2.jpeg" >
+                <div>
+                    <h1>Danial Latif</h1>
+                    <small>Civil engineer at lablablablabla</small>
+                    <small>2 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dicta et perspiciatis, eligendi molestias porro animi nemo voluptates vero provident. Iusto corrupti fugiat vero reprehenderit impedit minima eaque iste dolores!</p>
+            <img src="Media/user-4.jpeg" width="100%">
+            <div class="post-status">
+                <div class="post-icons">
+                    <i class="fa-regular fa-thumbs-up" style="color: rgb(35, 35, 247);"></i>
+                    <i class="fa-regular fa-heart" style="color: red;"></i>
+                    <i class="fa-solid fa-hands-clapping" style="color: green;"></i>
+                    <span class="liked-user">Peter Wasfy and 75 others</span>
+                </div>
+                <div>
+                    <span>50 comments &middot; 30 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="Media/user-5.jpeg" class="post-activity-user-icon">
+                    <img src="Media/triangle.png" class="post-activity-arrow-icon" >
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-regular fa-comments"></i>
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-solid fa-share"></i>
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="Media/user11.jpg" >
+                <div>
+                    <h1>Samir Hany</h1>
+                    <small>Builder at lablablablabla</small>
+                    <small>22 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dicta et perspiciatis, eligendi molestias porro animi nemo voluptates vero provident. Iusto corrupti fugiat vero reprehenderit impedit minima eaque iste dolores!</p>
+            <img src="Media/user11.jpg" width="100%">
+            <div class="post-status">
+                <div class="post-icons">
+                    <i class="fa-regular fa-thumbs-up" style="color: rgb(35, 35, 247);"></i>
+                    <i class="fa-regular fa-heart" style="color: red;"></i>
+                    <i class="fa-solid fa-hands-clapping" style="color: green;"></i>
+                    <span class="liked-user">Peter Wasfy and 75 others</span>
+                </div>
+                <div>
+                    <span>50 comments &middot; 30 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="Media/user-5.jpeg" class="post-activity-user-icon">
+                    <img src="Media/triangle.png" class="post-activity-arrow-icon" >
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-regular fa-comments"></i>
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-solid fa-share"></i>
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="Media/user-3.jpeg" >
+                <div>
+                    <h1>Aya Nabil</h1>
+                    <small>Docter at lablablablabla</small>
+                    <small>25 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dicta et perspiciatis, eligendi molestias porro animi nemo voluptates vero provident. Iusto corrupti fugiat vero reprehenderit impedit minima eaque iste dolores!</p>
+            <img src="Media/user-3.jpeg" width="100%">
+            <div class="post-status">
+                <div class="post-icons">
+                    <i class="fa-regular fa-thumbs-up" style="color: rgb(35, 35, 247);"></i>
+                    <i class="fa-regular fa-heart" style="color: red;"></i>
+                    <i class="fa-solid fa-hands-clapping" style="color: green;"></i>
+                    <span class="liked-user">Peter Wasfy and 75 others</span>
+                </div>
+                <div>
+                    <span>50 comments &middot; 30 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="Media/user-5.jpeg" class="post-activity-user-icon">
+                    <img src="Media/triangle.png" class="post-activity-arrow-icon" >
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-regular fa-comments"></i>
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-solid fa-share"></i>
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------right bar-------------------------------------------- -->
+    <div class="right-sidebar">
+        <!-- ---------------------------------------------- -->
+        <div class="sidebar-news">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <h3>Trending News</h3>
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot; 10, 934 readres</span>
+
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot; 10, 934 readres</span>
+
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot; 10, 934 readres</span>
+            
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot; 10, 934 readres</span>
+
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot; 10, 934 readres</span>
+
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+        <div class="sidebar-ad">
+            <small>Ad &middot; &middot; &middot; </small>
+            <p>Master The 5 Principles Of Web Development</p>
+            <div>
+                <img src="Media/usrer-1.jpeg" alt="">
+                <img src="Media/Xiaomi.png" alt="">
+            </div>
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="#" class="ad-link">Learn More</a>
+        </div>
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessability</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copy-right-msg">
+                <img src="Media/logo.png">
+                <p>Linkedup &#169; 2023. All right reserved</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script>
+        let sideBarActivity = document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showMoreLink")
+        function toggleActivity() {
+            sideBarActivity.classList.toggle("open-activity");
+            if(sideBarActivity.classList.contains("open-activity")) {
+                moreLink.innerHTML = "show less <b> - </b>"
+            }else{
+                moreLink.innerHTML = "show more <b> + </b>"
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
